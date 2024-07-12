@@ -1,0 +1,123 @@
+.navbar-toggler-icon {
+	background-image: none !important;
+	background-color: var(--bs-gray-800);
+	height: 2px;
+	width: 25px;
+	margin: 10px 0;
+	position: relative;
+	transition: all 0.35s ease-out;
+	transform-origin: center;
+}
+
+.navbar-toggler-icon::before {
+	display: block;
+	background-color: var(--bs-gray-800);
+	height: 2px;
+	content: "";
+	position: relative;
+	top: -7px;
+}
+
+/* transition: all 0.15s ease-out;
+    transform-origin: center;  */
+
+.navbar-toggler-icon::after {
+	display: block;
+	background-color: var(--bs-gray-800);
+	height: 2px;
+	content: "";
+	position: relative;
+	top: 4px;
+	transition: all 0.35s ease-out;
+	transform-origin: center;
+}
+
+.navbar-dark .navbar-toggler-icon,
+.navbar-dark .navbar-toggler-icon::before,
+.navbar-dark .navbar-toggler-icon::after {
+	background-color: var(--bs-gray-100);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+	transform: rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+	opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+	transform: rotate(-90deg) translateX(7px);
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+	outline: none;
+	border: none;
+	box-shadow: none;
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 800px;
+	}
+}
+
+@media (min-width: 768px) {
+	.img-fluid {
+		width: 516px !important;
+	}
+}
+
+.pdf {
+	width: 100%;
+	aspect-ratio: 4/3;
+}
+
+.card {
+	margin-bottom: 50px;
+	border: 0;
+}
+
+.card-header {
+	width: 25%;
+	background-color: #606C38; 
+	color: #FEFAE0;
+	text-align: center;
+}
+
+/* .card-body {
+	border-top: 10px black !important;
+} */
+
+*, .container, .card {
+	background-color: #FEFAE0;
+}
+
+.text-primary {
+	color: #283618 !important;
+}
+
+.navbar-brand {
+	color: #283618 !important;
+}
+
+a {
+	color: #283618;
+	font-weight: bold;
+}
+
+a:visited {
+	color: #283618;
+}
+
+.btn-primary {
+	background-color: #DDA15E;
+	border: 0;
+}
+
+.btn-primary:hover {
+	background-color: #BC6C25;
+}
